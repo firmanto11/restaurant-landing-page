@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior:smooth;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+    color: red;
+}
+
+header
+{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index:99;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    color:red;
+    border-bottom: solid red 1px;
+
+    
+}
+
+header .logo img
+{
+    
+    max-width: 200px;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+.hamburger .garis {
+    display:block;
+    right: 10px;
+    width: 30px;
+    height: 2px;
+    background-color: red;
+    margin-bottom: 4px;
+}
+.hidden{
+    display:none;
+    
+    
+}
+
+.topnav .itemnav{
+    display: block;
+    
+
+    padding: 10px 10px;
+
+    margin: 10px;
+}
+.topnav a{
+    
+    text-align: center;
+    
+    color: yellow;
+    text-decoration: none;
+    
+}
+.topnav a:hover{
+    font-weight:bold;
+}
+.topnav{
+    
+    position: fixed;
+    max-width: 250px;
+    
+    top:8rem;
+    left:auto;
+    right: 10px;
+    background-color: red;
+    border-radius: 10px;
+    
+}
+
+.banner{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    
+    
+}
+
+.textBox{
+    
+    color: yellow;
+    background-color: red;
+    padding: 20px;
+    border-radius:10px;
+   
+
+}
+
+.textPromo {
+    transform: translate(100%,0px);
+    opacity:0;
+} 
+
+ .effect{
+   transform: translate(0,0);
+    opacity:1;
+    transition: all 2s ;
+}
+
+.mangkok{
+    max-width: 350px;
+    
+    justify-content: flex-end;
+}
+
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5px;
+    
+    
+}
+
+#menu {
+    padding: 0 20px;
+}
+
+.subcontent{
+    
+    padding: 20px;
+    margin: 20px 0;
+    background-color: yellow;
+    color: red;
+    border: solid red 1px;
+    border-radius: 8px;
+    transform:translate(0, 100%);
+}
+
+.effectcontent {
+    transform:translate(0.0);
+    transition: transform 1s;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.submenu{
+    
+    padding: 20px 20px;
+    margin: 10px 5px;
+    border: solid red 1px;
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(-100%, 0);
+}
+
+.effectmenu {
+    transform: translate(0,0);
+    transition: transform 2s;
+}
+
+.submenu img{
+    max-width: 400px;
+    max-height: 200px;
+    margin: 5px 0px;
+    
+    border-radius: 8px;
+}
+
+.submenu table td{
+    padding: 10px 10px;
+    font-weight: 700;
+    
+}
+
+.wabox {
+    
+    margin-top: 10px;
+    background-color: green;
+    color:white;
+    border-radius: 10px;
+    max-width: 150px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.wabox a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    
+}
+footer{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 40px 20px;
+    border-top:solid red 1px;
+    
+    z-index: 88;
+}
+footer h2 a{
+    text-decoration:none;
+    color:red;
+}
+@media only screen and (min-width: 500px) {
+
+    body{
+        max-width:500px;
+        margin:auto;
+        border-left: solid red 1px;
+        border-right: solid red 1px;
+    }
+     .hamburger{
+        display:none;
+    }
+    .topnav{
+        display-flex;
+        position:absolute;
+        right:20px;
+        top:auto;
+        left:auto;
+        align-items:center;
+        justify-content:space-between;
+        background-color:transparent;
+        color:red;
+        border-radius: 10px;
+    }
+    
+    .topnav .itemnav{
+        display: block;
+        
+    
+        padding: 1px ;
+        
+    
+        
+    } 
+    
+    .topnav a{
+        
+        text-align: center;
+        
+        color: red;
+        text-decoration: none;
+        
+    }
+    .hidden{
+        display: flex;
+    }
+
+   
+}
